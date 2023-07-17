@@ -7,7 +7,7 @@ const LandingText = () => {
           <h1>Grand Prix</h1>
           <h1><span className='red-line'></span>D'afrique</h1>
           <p>Hacque adfabilitate confisus cum eadem postridie feceris</p>
-          <button type="button" class="btn btn-outline-light">Lire plus</button>
+          <button type="button" className="btn btn-outline-light">Lire plus</button>
           <div className='bar-group'>
               <span></span>
               <span></span>

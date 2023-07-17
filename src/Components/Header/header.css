@@ -57,6 +57,11 @@
     align-items: center;
     gap: 40px;
 }
+.nav-icon button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
 .nav-icon svg {
     color: #FFFFFF;
     height: 30px;
