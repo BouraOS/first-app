@@ -5,6 +5,7 @@ import LandingText from './LandingText'
 import LandingCard from './LandingCard'
 import Boxes from './Boxes'
 import PopupConnexion from '../Modal-Popup/Popup-Connexion/PopupConnexion'
+import InscriptionPopup from '../Modal-Popup/Inscription-popup/InscriptionPopup'
 
 const Header = () => {
     return (
@@ -20,7 +21,10 @@ const Header = () => {
                         <div className="col-12 col-md-6 mx-auto d-flex justify-content-center">
                             <LandingCard/>
                             </div>
-                        <div className="col-12"><Boxes/></div>
+                        <div className="col-12">
+                            <Boxes/>
+                            <InscriptionPopup/>
+                        </div>
                     </div>
                 </div>
             </div>

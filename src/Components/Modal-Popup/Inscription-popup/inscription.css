@@ -1,6 +1,7 @@
 .modal-content{
     border-radius: 30px !important;
 }
+
 .close{
     width: 40px;
     height: 40px;
@@ -18,7 +19,8 @@
 .modal-body {
     padding-top: 0 !important;
     margin-inline: auto;
-    max-width: 400px;
+    max-width: 380px;
+
 }
 .modal-body h1{
     font-size: 32px;
@@ -36,29 +38,25 @@
 }
 .main-btns button{
     border-radius: 15px;
+    padding-inline: 20px;
 }
-.main-btns button:nth-of-type(1){
+.main-btns .btn-connect{
     display: flex;
     align-items: center;
     text-align: start;
     justify-content: center;
-    width: 150px;
-    gap: 5px;
+    width: 130px;
     line-height: 15px;
-    padding-inline: 35px;
-    border-radius: 15px;
     font-weight: 600;
 }
-.main-btns button:nth-of-type(1) i{
-    font-size: 25px;
+.main-btns .btn-connect i{
+    font-size: 26px;
     font-weight: normal;
-}
-.main-btns .btn-outline-gray{
-    border: 1px solid #E3E6E8;
-    font-size: 16px;
-}
-.main-btns .btn-outline-gray i{
     color: #D81336;
+    margin-right: 5px;
+}
+.main-btns button:nth-of-type(2) i{
+    font-size: 16px;
 }
 .modal-body .form-grp {
     margin-inline: 30px;
@@ -66,52 +64,18 @@
 .modal-body .form-grp h3 {
     font-size: 25px;
     font-weight: 700;
+    width: 300px;
 }
 .modal-body .form-grp h4 {
     font-size: 16px;
     color: #6F6F6F;
 }
-.modal-body .form-grp .form-control{
-    border-radius: 15px;
-    color: black;
-    font-size: 14px;
-    font-weight: 600;
-    outline: none;
-}
-
-.form-control:focus {
-    border-color: #ce717acf;
-    outline: 0;
-    box-shadow: 0 0 0 .25rem rgb(220, 53, 69, .25);
-}
-.pass-field {
-    position: relative;
-}
-#togglePassword {
-    position: absolute;
-    top: 8px;
-    right: 15px;
-    font-size: 16px;
-}
-.form-grp p {
-    color: #6F6F6F;
-    font-size: 12px;
-}
-.form-grp a{
-    font-size: 12px;
-    color: black;
-}
-
-.modal-foot {
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-.modal-foot button {
+.form-grp .btn-dark{
     padding-inline: 35px;
     border-radius: 15px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
+    margin-top: 40px;
+    box-shadow: 0px 5px 15px #0000004E;
+    width: fit-content;
 }

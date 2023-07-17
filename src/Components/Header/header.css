@@ -206,8 +206,9 @@
     color: #B81C27;
     font-size: 12px;
     margin-bottom: 15px;
-    border-radius: 26px;
+    border-radius: 20px;
     padding-inline: 25px;
+    width: fit-content;
 }
 .red-box img {
     width: 100%;
