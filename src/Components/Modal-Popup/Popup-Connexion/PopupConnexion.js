@@ -13,8 +13,8 @@ const PopupConnexion = () => {
          }
     }
   return (
-    <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div className="modal-dialog modal-md">
+    <div className="modal fade" id="popupConnexion" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog">
         <div className="modal-content">
           <div className="modal-header d-flex justify-content-end">
             <button type="button" className="close d-flex align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close">
@@ -22,13 +22,13 @@ const PopupConnexion = () => {
             </button>
           </div>
           <div className="modal-body mb-4">
-            <h1>Lorem ipsum dolor sit amet</h1>
+            <h1 className='text-center m-auto'>Lorem ipsum dolor sit amet</h1>
             <div className="main-btns">
-              <button type="button" className="btn btn-danger">
+              <button type="button" className="btn red-btn" >
                 <i className="fa-regular fa-user"></i> Je me connect
               </button>
-              <button type="button" className="btn btn-outline-gray">
-                <i className="fa-solid fa-file-pen"></i> Inscription
+              <button type="button" className="btn btn-outline-gray" data-bs-toggle="modal" data-bs-target="#popupInscription">
+                <i className="fa-solid fa-file-pen red-icon"></i> Inscription
               </button>
             </div>
             <div className="form-grp">
@@ -45,7 +45,7 @@ const PopupConnexion = () => {
                 </div>
                 <p>By login, you agree to our <a href="!#">Terms & conditions</a></p>
                 <div className="modal-foot">
-                  <button type="submit" className="btn btn-danger">Connexion</button>
+                  <button type="submit" className="btn">Connexion</button>
                   <a href="!#">Forget password</a>
                 </div>
               </form>

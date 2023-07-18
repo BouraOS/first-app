@@ -5,26 +5,33 @@
     width: 40px;
     height: 40px;
     color: #D81336 !important;
-    background-color: #FFF;
     font-size: 15px;
-    border: 2px solid #E2E2E2;
+    border: 2px solid #E2E2E2 !important;
     border-radius: 15px;
     opacity: 1;
+    background-color: transparent;
 }
-
+.close:hover {
+    border: 2px solid #d53948 !important;
+    background-color: #fadadf;
+}
 .modal-header {
     border-bottom: none;
 }
 .modal-body {
     padding-top: 0 !important;
     margin-inline: auto;
-    max-width: 400px;
+}
+
+@media (min-width: 576px) {
+    .modal-body {
+        max-width: 400px;
+    }
 }
 .modal-body h1{
     font-size: 32px;
     font-weight: bold;
-    text-align: center;
-    margin-inline: 15%;
+    max-width: 320px;
 }
 .main-btns {
     display: flex;   
@@ -36,29 +43,46 @@
 }
 .main-btns button{
     border-radius: 15px;
-}
-.main-btns button:nth-of-type(1){
     display: flex;
     align-items: center;
     text-align: start;
     justify-content: center;
-    width: 150px;
-    gap: 5px;
-    line-height: 15px;
-    padding-inline: 35px;
-    border-radius: 15px;
-    font-weight: 600;
 }
-.main-btns button:nth-of-type(1) i{
-    font-size: 25px;
+.main-btns button:nth-of-type(1) {
+    width: 150px;
+    gap: 8px;
+    border-radius: 15px;
+    font-size: 13px;
+    line-height: 15px;
+}
+.btn-outline-gray .red-icon {
+    color:#B81C27 !important;
+}
+.red-btn{
+    padding-inline: 30px;
+    background-color: #D81336;
+    color: #FFFFFF;
+}
+.red-btn .red-white {
+    color:#FFFFFF
+}
+.red-btn:hover {
+    background-color: #B81C27;
+    color: #FFFFFF;
+}
+.main-btns .fa-user{
+    font-size: 24px;
     font-weight: normal;
 }
-.main-btns .btn-outline-gray{
-    border: 1px solid #E3E6E8;
-    font-size: 16px;
+.main-btns button:nth-of-type(2) {
+    font-size: 14px;
+    gap: 8px;
 }
-.main-btns .btn-outline-gray i{
-    color: #D81336;
+.btn-outline-gray{
+    padding-inline: 20px;
+}
+.main-btns .fa-file-pen{
+    font-size: 18px;
 }
 .modal-body .form-grp {
     margin-inline: 30px;
@@ -110,8 +134,14 @@
     margin-top: 20px;
 }
 .modal-foot button {
-    padding-inline: 35px;
+    background-color: #D81336;
+    color: #FFFFFF;
+    padding-inline: 30px;
     border-radius: 15px;
     font-size: 14px;
     font-weight: 600;
+}
+.modal-foot button:hover {
+    background-color: #B81C27;
+    color: #FFFFFF;
 }

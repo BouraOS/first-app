@@ -1,4 +1,6 @@
 import React from 'react'
+import PopupConnexion from '../Modal-Popup/Popup-Connexion/PopupConnexion'
+import InscriptionPopup from '../Modal-Popup/Inscription-popup/InscriptionPopup'
 
 const Boxes = () => {
     return (
@@ -9,9 +11,9 @@ const Boxes = () => {
                         <div className='card-inf '>
                             <h5 className="card-title">J'ouvre mon compte eSorec.</h5>
                             <p className="card-text ">Hacque adfabilitate confisus cum eadem postridie</p>
-                            <button type="button" className="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" className="btn btn-light" data-bs-toggle="modal" data-bs-target="#popupConnexion">
                                 J'ouvre mon compte
-                            </button>  
+                            </button>
                         </div>
                     </div>
                     <div className="col-5 ">
@@ -24,7 +26,10 @@ const Boxes = () => {
                     <div className="card-body text-center">
                         <h5 className="card-title">J'ai un compte eSorec.ma</h5>
                         <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                        <button type="button" className="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">Connexion</button>
+                        <button type="button" className="btn btn-danger" data-bs-toggle="modal" data-bs-target="#popupInscription">
+                            Connexion
+                        </button>
+                        {/* <InscriptionPopup/> */}
                     </div>
                 </div>
             </div>
