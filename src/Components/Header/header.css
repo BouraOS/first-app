@@ -232,7 +232,7 @@
     } 
 }
 @media (min-width: 992px) {
-    .boxes {
+    .boxes-container .boxes {
         position: absolute;
         top: 100%;
     }

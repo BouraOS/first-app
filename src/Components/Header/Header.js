@@ -21,7 +21,7 @@ const Header = () => {
                         <div className="col-12 col-md-6 mx-auto d-flex justify-content-center">
                             <LandingCard/>
                             </div>
-                        <div className="col-12">
+                        <div className="boxes-container col-12">
                             <Boxes/>
                         </div>
                     </div>
