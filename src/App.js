@@ -1,25 +1,42 @@
 import 'normalize.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
 import Header from './Components/Header/Header'
-import Fixtures from './Components/Fixtures/Fixtures';
-import DayCalendar from './Components/Fixtures/DayCalendar';
+import './Components/Fixtures/FixStyle.css'
+import './App.css';
+
+import {
+    createBrowserRouter, 
+    createRoutesFromElements,
+    Route, 
+    RouterProvider
+  } from 'react-router-dom'
+
+// pages
+import Hier from './Components/Fixtures/pages/Hier'
+import Today from './Components/Fixtures/pages/Today';
+import Tomorrow from './Components/Fixtures/pages/Tomorrow';
+
+// layouts
+import FixturesLayout from './Components/Fixtures/Layouts/FixturesLayout';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<FixturesLayout />}>
+      <Route index element={<Today />} />
+      <Route path="hier" element={<Hier />} />
+      <Route path="demain" element={<Tomorrow />}/>
+    </Route>
+  )
+)
+
 function App() {
   return (
     <div className="App">
         <header className="App-header">
           <Header/>
         </header>
-        <>
-          <section className="fixtures-section container-lg mt-3">
-            <Fixtures/>
-            <DayCalendar/>
-          </section>
-          <div className='text-center mb-2'>
-            <button type='button' className='btn btn-danger'><i class="fa-solid fa-calendar-days" style={{marginRight: "10px"}}></i>Voir tout le programme</button>
-          </div>
-        </>
+        <RouterProvider router={router} />
     </div>
   );
 }

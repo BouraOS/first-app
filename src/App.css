@@ -16,7 +16,7 @@ body {
 .fixtures-section {
   position: relative;
 }
-.fixtures-section::after {
+/* .fixtures-section::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -25,4 +25,4 @@ body {
   width: 100%;
   height: 300px;
   background: transparent linear-gradient(180deg, #FFFFFF00 0%, #FFFFFF 100%) 0% 0% ;
-}
+} */

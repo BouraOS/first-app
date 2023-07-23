@@ -25,32 +25,33 @@
     align-items: center;
     justify-content: space-around;
 }
-.fixtures-nav ul a{
+.fixtures-nav ul button{
     display: inline-block;
     text-decoration: none;
     color: #707070;
     font-size: 18px;
     padding: 10px;
+    background-color: transparent;
+    border: none;
 }
-.fixtures-nav ul li.active a{
+.fixtures-nav ul li.active button{
     color: #B81C27;
     border-bottom: 2px solid #B81C27;
     font-weight: 500;
 }
-
 @media (max-width: 991.98px) {
-    .Fixtures-races{
-        display: flex;
+    .Fixtures-main .boxes{
+        display: flex !important;
         overflow-x: auto;
         margin-left: 35px;
     }
-    .Fixtures-races::-webkit-scrollbar{
-        display: 0;
+    .Fixtures-main .boxes::-webkit-scrollbar {
+        display: none !important;
     }
-    .Fixtures-races::-webkit-scrollbar-thumb{
+    .Fixtures-main .boxes::-webkit-scrollbar-thumb{
         width: 0;
     }
-    .Fixtures-races .card{
+    .Fixtures-main .card{
         min-width: 150px;
         min-height: 110px;
         text-align: center;
@@ -59,7 +60,7 @@
         border-radius: 17px;
         padding: 30px 10px;
     }
-    .Fixtures-races .race-info {
+    .Fixtures-main .race-info {
         max-width: 130px;
         display: flex;
         flex-direction: column;
@@ -68,7 +69,7 @@
         gap: 20px;
         text-decoration: none;
     }
-    .Fixtures-races .elipse {
+    .Fixtures-main .elipse {
          width: 50px;
         height: 50px;
         color: #FFFFFF;
@@ -78,12 +79,13 @@
         border: 2px solid #D1D1D1;
         
     }
-    .Fixtures-races .race-place {
+    .Fixtures-main .race-place {
         color: #FFFFFF;
         font-size: 18px;
         width: 130px;
+        text-transform: uppercase;
     }
-    .Fixtures-races .race-icons {
+    .Fixtures-main .race-icons {
         color: #FFFFFF;
         font-size: 16px;
         display: flex;
@@ -93,17 +95,17 @@
     }
 }
 @media (min-width: 992px) {
-    .Fixtures-races{
-        display: flex;
+    .Fixtures-main .boxes{
+        display: flex !important;
         margin-left: 35px;
     }
-    .Fixtures-races::-webkit-scrollbar{
+    .Fixtures-main .boxes::-webkit-scrollbar{
         display: 0;
     }
-    .Fixtures-races::-webkit-scrollbar-thumb{
+    .Fixtures-main .boxes::-webkit-scrollbar-thumb{
         width: 0;
     }
-    .Fixtures-races .card{
+    .Fixtures-main .card{
         width: 280px;
         background-color: #707070;
         margin-right: 10px;
@@ -112,7 +114,7 @@
         display: grid;
         place-content: center;
     }
-    .Fixtures-races .elipse {
+    .Fixtures-main .elipse {
         text-align: center;
         width: 40px;
         height: 40px;
@@ -122,26 +124,27 @@
         line-height: 35px;
         border: 1px solid #FFFFFF;
     }
-    .Fixtures-races .race-info {
+    .Fixtures-main .race-info {
         display: flex;
         gap: 15px;
         margin-inline: auto;
         text-decoration: none;
         color: #FFFFFF;
     }
-    .Fixtures-races .race-info .group {
+    .Fixtures-main .race-info .group {
         display: flex;
         flex-direction: column;
     }
-    .Fixtures-races .race-info .group .race-place{
+    .Fixtures-main .race-info .group .race-place{
         text-align: left;
         max-width: 110px;
+        text-transform: uppercase;
     }
-    .Fixtures-races .race-info .group .race-icons{
+    .Fixtures-main .race-info .group .race-icons{
         display: flex;
         gap: 10px;
     }
-    .Fixtures-races .race-info .group .race-icons i{
+    .Fixtures-main .race-info .group .race-icons i{
         display: flex;
         align-items: center;
     }
@@ -185,7 +188,7 @@
         padding: 30px 10px 20px;
     }
     
-    .calendar .items-info {
+    .Fixtures-footer .items-info {
         max-width: 130px;
         display: flex;
         flex-direction: column;
@@ -276,32 +279,32 @@
         line-height: 40px;
         
     }
-    .calendar .items-info {
+    .Fixtures-footer .items-info {
         display: flex;
         gap: 15px;
         text-decoration: none;
         color: #707070;
     }
    
-    .calendar .items-info .group{
+    .Fixtures-footer .items-info .group{
         display: flex;
         flex-direction: column;
         flex-grow: 1;
     }
-    .calendar .items-info .group h4{
+    .Fixtures-footer .items-info .group h4{
         font-size: 18px;
         max-width: 140px;
     }
-    .calendar .items-info .group p{
+    .Fixtures-footer .items-info .group p{
         font-size: 14px;
     }
-    .calendar .items-info .group a{
+    .Fixtures-footer .items-info .group a{
         text-decoration: none;
         display: flex;
         width: 100%;
         justify-content: end;
     }
-    .calendar .items-info .group a i{
+    .Fixtures-footer .items-info .group a i{
         border: 1px solid #000000;
         color: #B81C27;
         height: 30px;

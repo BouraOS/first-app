@@ -1,216 +1,30 @@
-import React from 'react'
 
-const DayCalendar = () => {
+const DayCalendar = ({program}) => {
+
     return (
-        <div className='calendar container mt-5'>
-            <div className='rang' data-time='07:00 AM'>
-                <div className='boxes container'>
-                    <div className='box-items'>
-                        <a href='#!'  className='items-info'>
-                            <span className='elipse'>C1</span>
-                            <div className='group'>
-                                <h4 className='items-title'>Lorem ipsum dolor sit amet</h4>
-                                <p className='box-text'>
-                                        Hacque adfabilitate confisus cum eadem postridie feceris
-                                </p>
-                                <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
-                            </div>
-                        </a>
+        <div className='Fixtures-footer container mt-5'>
+            {
+                program.program.map((group, index)=> (
+                    <div className='rang' data-time={group.time} key={index}>
+                        <div className='boxes container'>
+                            {
+                            group.courses.map((cours, index) => (
+                                <div className='box-items' key={index}>
+                                    <a href='#!'  className='items-info'>
+                                        <span className='elipse'>{cours.category}</span>
+                                        <div className='group'>
+                                            <h4 className='items-title'>{cours.title}</h4>
+                                            <p className='box-text'>{cours.description}</p>
+                                            <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
+                                        </div>
+                                    </a>
+                                </div>
+                                ))
+                            }
+                        </div>
                     </div>
-                    <div className='box-items'>
-                        <a href='#!' className='items-info'>
-                            <span className='elipse'>C1</span>
-                            <div className='group'>
-                                <h4 className='items-title'>Lorem ipsum dolor sit amet</h4>
-                                <p className='box-text'>
-                                        Hacque adfabilitate confisus cum eadem postridie feceris
-                                </p>
-                                <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className='box-items'>
-                        <a href='#!'  className='items-info'>
-                            <span className='elipse'>C1</span>
-                            <div className='group'>
-                                <h4 className='items-title'>Lorem ipsum dolor sit amet</h4>
-                                <p className='box-text'>
-                                        Hacque adfabilitate confisus cum eadem postridie feceris
-                                </p>
-                                <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className='box-items'>
-                        <a href='#!'  className='items-info'>
-                            <span className='elipse'>C1</span>
-                            <div className='group'>
-                                <h4 className='items-title'>Lorem ipsum dolor sit amet</h4>
-                                <p className='box-text'>
-                                        Hacque adfabilitate confisus cum eadem postridie feceris
-                                </p>
-                                <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div className='rang' data-time='08:00 AM'>
-                <div className='boxes container'>
-                    <div className='box-items'>
-                        <a href='#!'  className='items-info'>
-                            <span className='elipse'>C1</span>
-                            <div className='group'>
-                                <h4 className='items-title'>Lorem ipsum dolor sit amet</h4>
-                                <p className='box-text'>
-                                        Hacque adfabilitate confisus cum eadem postridie feceris
-                                </p>
-                                <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className='box-items'>
-                        <a href='#!'  className='items-info'>
-                            <span className='elipse'>C1</span>
-                            <div className='group'>
-                                <h4 className='items-title'>Lorem ipsum dolor sit amet</h4>
-                                <p className='box-text'>
-                                        Hacque adfabilitate confisus cum eadem postridie feceris
-                                </p>
-                                <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className='box-items'>
-                        <a href='#!'  className='items-info'>
-                            <span className='elipse'>C1</span>
-                            <div className='group'>
-                                <h4 className='items-title'>Lorem ipsum dolor sit amet</h4>
-                                <p className='box-text'>
-                                        Hacque adfabilitate confisus cum eadem postridie feceris
-                                </p>
-                                <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className='box-items'>
-                        <a href='#!'  className='items-info'>
-                            <span className='elipse'>C1</span>
-                            <div className='group'>
-                                <h4 className='items-title'>Lorem ipsum dolor sit amet</h4>
-                                <p className='box-text'>
-                                        Hacque adfabilitate confisus cum eadem postridie feceris
-                                </p>
-                                <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div className='rang' data-time='09:00 AM'>
-                <div className='boxes container'>
-                    <div className='box-items'>
-                        <a href='#!'  className='items-info'>
-                            <span className='elipse'>C1</span>
-                            <div className='group'>
-                                <h4 className='items-title'>Lorem ipsum dolor sit amet</h4>
-                                <p className='box-text'>
-                                        Hacque adfabilitate confisus cum eadem postridie feceris
-                                </p>
-                                <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className='box-items'>
-                        <a href='#!'  className='items-info'>
-                            <span className='elipse'>C1</span>
-                            <div className='group'>
-                                <h4 className='items-title'>Lorem ipsum dolor sit amet</h4>
-                                <p className='box-text'>
-                                        Hacque adfabilitate confisus cum eadem postridie feceris
-                                </p>
-                                <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className='box-items'>
-                        <a href='#!'  className='items-info'>
-                            <span className='elipse'>C1</span>
-                            <div className='group'>
-                                <h4 className='items-title'>Lorem ipsum dolor sit amet</h4>
-                                <p className='box-text'>
-                                        Hacque adfabilitate confisus cum eadem postridie feceris
-                                </p>
-                                <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className='box-items'>
-                        <a href='#!'  className='items-info'>
-                            <span className='elipse'>C1</span>
-                            <div className='group'>
-                                <h4 className='items-title'>Lorem ipsum dolor sit amet</h4>
-                                <p className='box-text'>
-                                        Hacque adfabilitate confisus cum eadem postridie feceris
-                                </p>
-                                <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div className='rang'data-time='10:00 AM'>
-                <div className='boxes container'>
-                    <div className='box-items'>
-                        <a href='#!'  className='items-info'>
-                            <span className='elipse'>C1</span>
-                            <div className='group'>
-                                <h4 className='items-title'>Lorem ipsum dolor sit amet</h4>
-                                <p className='box-text'>
-                                        Hacque adfabilitate confisus cum eadem postridie feceris
-                                </p>
-                                <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className='box-items'>
-                        <a href='#!'  className='items-info'>
-                            <span className='elipse'>C1</span>
-                            <div className='group'>
-                                <h4 className='items-title'>Lorem ipsum dolor sit amet</h4>
-                                <p className='box-text'>
-                                        Hacque adfabilitate confisus cum eadem postridie feceris
-                                </p>
-                                <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className='box-items'>
-                        <a href='#!'  className='items-info'>
-                            <span className='elipse'>C1</span>
-                            <div className='group'>
-                                <h4 className='items-title'>Lorem ipsum dolor sit amet</h4>
-                                <p className='box-text'>
-                                        Hacque adfabilitate confisus cum eadem postridie feceris
-                                </p>
-                                <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className='box-items'>
-                        <a href='#!'  className='items-info'>
-                            <span className='elipse'>C1</span>
-                            <div className='group'>
-                                <h4 className='items-title'>Lorem ipsum dolor sit amet</h4>
-                                <p className='box-text'>
-                                        Hacque adfabilitate confisus cum eadem postridie feceris
-                                </p>
-                                <a href='#!' className='items-icon'><i className="fa-solid fa-info"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                ))
+            }
         </div>
     )
 }
