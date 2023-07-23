@@ -43,25 +43,25 @@ export const DataFixtures = {
                     "courses": [
                         {
                             "id": 1,
-                            "category": "C1",
+                            "category": "F1",
                             "title": "Lorem ipsum dolor sit amet",
                             "description": "Hacque adfabilitate confisus cum eadem postridie feceris",
                         },
                         {
                             "id": 2,
-                            "category": "C1",
+                            "category": "F1",
                             "title": "Lorem ipsum dolor sit amet",
                             "description": "Hacque adfabilitate confisus cum eadem postridie feceris",
                         },
                         {
                             "id": 3,
-                            "category": "C1",
+                            "category": "F1",
                             "title": "Lorem ipsum dolor sit amet",
                             "description": "Hacque adfabilitate confisus cum eadem postridie feceris",
                         },
                         {
                             "id": 4,
-                            "category": "C1",
+                            "category": "F1",
                             "title": "Lorem ipsum dolor sit amet",
                             "description": "Hacque adfabilitate confisus cum eadem postridie feceris",
                         },
@@ -397,25 +397,25 @@ export const DataFixtures = {
                     "courses": [
                         {
                             "id": 1,
-                            "category": "C1",
+                            "category": "M1",
                             "title": "Lorem ipsum dolor sit amet",
                             "description": "Hacque adfabilitate confisus cum eadem postridie feceris",
                         },
                         {
                             "id": 2,
-                            "category": "C1",
+                            "category": "M1",
                             "title": "Lorem ipsum dolor sit amet",
                             "description": "Hacque adfabilitate confisus cum eadem postridie feceris",
                         },
                         {
                             "id": 3,
-                            "category": "C1",
+                            "category": "M1",
                             "title": "Lorem ipsum dolor sit amet",
                             "description": "Hacque adfabilitate confisus cum eadem postridie feceris",
                         },
                         {
                             "id": 4,
-                            "category": "C1",
+                            "category": "M1",
                             "title": "Lorem ipsum dolor sit amet",
                             "description": "Hacque adfabilitate confisus cum eadem postridie feceris",
                         },
@@ -427,25 +427,25 @@ export const DataFixtures = {
                     "courses": [
                         {
                             "id": 1,
-                            "category": "C1",
+                            "category": "M1",
                             "title": "Lorem ipsum dolor sit amet",
                             "description": "Hacque adfabilitate confisus cum eadem postridie feceris",
                         },
                         {
                             "id": 2,
-                            "category": "C1",
+                            "category": "M1",
                             "title": "Lorem ipsum dolor sit amet",
                             "description": "Hacque adfabilitate confisus cum eadem postridie feceris",
                         },
                         {
                             "id": 3,
-                            "category": "C1",
+                            "category": "M1",
                             "title": "Lorem ipsum dolor sit amet",
                             "description": "Hacque adfabilitate confisus cum eadem postridie feceris",
                         },
                         {
                             "id": 4,
-                            "category": "C1",
+                            "category": "M1",
                             "title": "Lorem ipsum dolor sit amet",
                             "description": "Hacque adfabilitate confisus cum eadem postridie feceris",
                         },
