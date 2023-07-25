@@ -67,6 +67,7 @@
         padding: 20px 10px;
         min-width: 150px;
         flex-grow: 1;
+        cursor: pointer;
     }
     .Fixtures-main .race-info {
         max-width: 150px;
@@ -122,6 +123,7 @@
         border-radius: 17px;
         display: grid;
         place-content: center;
+        cursor: pointer;
     }
     .Fixtures-main .elipse {
         text-align: center;
@@ -202,6 +204,7 @@
         padding: 20px 10px;
         min-width: 150px;
         flex-grow: 1;
+        cursor: pointer;
     }
     
     .Fixtures-footer .items-info {
@@ -211,6 +214,7 @@
         align-items: center;
         gap: 20px;
         text-decoration: none;
+        
     }
     .items-info .elipse {
         width: 50px;
@@ -282,6 +286,7 @@
         margin-right: 10px;
         border-radius: 17px;
         padding: 15px 10px;
+        cursor: pointer;
     }
      .items-info .elipse {
         text-align: center;
@@ -317,7 +322,7 @@
         text-decoration: none;
         display: flex;
         width: 100%;
-        justify-content: end;
+        justify-content: flex-end;
     }
     .Fixtures-footer .items-info .group a i{
         border: 1px solid #000000;
