@@ -20,8 +20,8 @@ export default function FixturesLayout() {
         event.currentTarget.classList.add("active");
         setData(DataFixtures[`${event.currentTarget.querySelector('button').innerHTML}`])
       }
-    //   onClick={handleActive}
   return (
+    <>
     <section className="fixtures-section container-lg mt-3" id='fixtures'>
         <header className="Fixtures-header mb-2">
             <nav className="fixtures-nav">
@@ -54,5 +54,11 @@ export default function FixturesLayout() {
             <DayCalendar program={program}/>
         </div>
     </section>
+    <div class="text-center mb-3">
+        <button className='btn btn-danger rounded-4' style={{padding: "15px 50px"}}><i class="bi bi-calendar3 me-2"></i>
+        Voir tout le programme
+        </button>
+    </div>
+    </>
   )
 }

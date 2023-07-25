@@ -2,11 +2,11 @@
 const DayCalendar = ({program}) => {
 
     return (
-        <div className='Fixtures-footer container mt-5'>
+        <div className='Fixtures-footer mt-5'>
             {
                 program.program.map((group, index)=> (
                     <div className='rang' data-time={group.time} key={index}>
-                        <div className='boxes container'>
+                        <div className='boxes'>
                             {
                             group.courses.map((cours, index) => (
                                 <div className='box-items' key={index}>
