@@ -1,7 +1,4 @@
 import React from 'react'
-import PopupConnexion from '../Modal-Popup/Popup-Connexion/PopupConnexion'
-import InscriptionPopup from '../Modal-Popup/Inscription-popup/InscriptionPopup'
-
 const Boxes = () => {
     return (
         <div className='boxes row g-4'>
